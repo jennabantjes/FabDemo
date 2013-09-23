@@ -20,8 +20,8 @@
                     $('#open-menu').hide();
                     $('#open-menu-2').show();
                     $('.arrow-right-nav').show();
-                    $('ul.categories').hide();
-                    $('.flyout').show();
+                    $('ul.categories').hide("slide", { direction: "right" }, 1000);
+                    $('.flyout').show("slide", { direction: "left" }, 1000);
                 });
 
                 $('.arrow-right-nav').click(function(){
