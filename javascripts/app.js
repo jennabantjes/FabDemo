@@ -1,10 +1,11 @@
 ;(function($){
 
-$(window).resize(function() {
 
     swapNavs = function() {
 
+        $(window).resize(function() {
             var $width = $( window ).width();
+        });
 
             console.log($width);
 
@@ -51,5 +52,4 @@ $(window).resize(function() {
 
     swapNavs();
 
-    });
 }(jQuery));
