@@ -5,9 +5,6 @@
 
         $(window).resize(function() {
             var $width = $( window ).width();
-        });
-
-            console.log($width);
 
             if ($width <= 750) {
                 console.log('small');
@@ -41,14 +38,11 @@
                 $('#open-menu-2').hide();
 
                 $('ul.categories a').click(function(){
-                    console.log('almost done');
-
-                    //$('ul.categories').slideToggle();
-
                     $('.flyout').slideToggle();
                 });
             }
-        }
+        });
+    }
 
     swapNavs();
 
