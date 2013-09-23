@@ -19,6 +19,7 @@
                     console.log('come on');
                     $('#open-menu').hide();
                     $('#open-menu-2').show();
+                    $('.arrow-right-nav').show();
                     $('ul.categories').hide();
                     $('.flyout').show();
                 });
