@@ -35,21 +35,17 @@
             else {
                 $('#open-menu').hide();
                 $('#open-menu-2').hide();
+
+                $('ul.categories a').click(function(){
+                    console.log('almost done');
+
+                    //$('ul.categories').slideToggle();
+
+                    $('.flyout').slideToggle();
+                });
             }
         }
 
-    subNavs = function() {
-
-        $('ul.categories a').click(function(){
-            console.log('almost done');
-
-            //$('ul.categories').slideToggle();
-
-            $('.flyout').slideToggle();
-        });
-    }
-
     swapNavs();
-    subNavs();
 
 }(jQuery));

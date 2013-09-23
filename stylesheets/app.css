@@ -255,6 +255,8 @@ nav {
 nav .icon-down-open, .arrow-right-nav {
   background-color: #303132;
   color: white;
+  font-size: 24px;
+  text-align: center;
 }
 @media screen and (max-width: 750px) {
   /* line 182, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
