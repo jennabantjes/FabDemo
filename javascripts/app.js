@@ -10,6 +10,7 @@
                 console.log('small');
                 $('#open-menu').click(function(){
                     $('ul.categories').slideToggle();
+                    $('.arrow-right-nav').hide();
                 });
 
                 $('ul.categories a').click(function(){
