@@ -401,14 +401,7 @@ nav .icon-down-open {
 @media screen and (max-width: 550px) {
   /* line 299, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   .policies div {
-    width: 32.8%;
-  }
-}
-@media screen and (max-width: 450px) {
-  /* line 299, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
-  .policies div {
-    height: 200px;
-    width: 32.7%;
+    width: 100%;
   }
 }
 
@@ -650,6 +643,12 @@ footer a:hover {
   width: 24%;
 }
 
+@media screen and (max-width: 550px) {
+  .one-of-four {
+    width: 49%;
+  }
+}
+
 /* line 534, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .two-of-five {
   width: 39%;
@@ -703,7 +702,7 @@ footer a:hover {
 
 /* line 572, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .shipping-icon {
-  width: 30%;
+  width: 29%;
 }
 
 /* line 576, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
@@ -839,6 +838,10 @@ img {
 
 /* line 686, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 header img {
+  width: 10%;
+}
+
+.logo img {
   width: auto;
 }
 
@@ -861,7 +864,7 @@ input[type="search"] {
   border-radius: 15px;
   font-size: 13px;
   height: 30px;
-  min-width: 130px;
+  min-width: 95px;
   padding-left: 30px;
   -webkit-appearance: none;
   width: 100%;
