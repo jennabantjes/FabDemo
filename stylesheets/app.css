@@ -880,6 +880,7 @@ form {
 /* line 729, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .title-top h1 {
   color: white;
+  font-size: 14px;
   line-height: 24px;
   opacity: 1;
 }
