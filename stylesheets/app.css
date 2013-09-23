@@ -801,7 +801,7 @@ h2 {
 /* line 647, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .meta-top {
   font-size: 13px;
-  line-height: 0px;
+  line-height: 20px;
   margin: 0;
   vertical-align: middle;
 }
@@ -818,6 +818,15 @@ h2 {
     line-height: 12px;
     width: 10%;
   }
+}
+
+.icon-down-open div.icon-right-dir {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
 }
 
 /* line 666, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
