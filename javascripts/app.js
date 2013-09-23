@@ -22,7 +22,7 @@
                 $('.arrow-right-nav').click(function(){
                     $('ul.categories').hide();
                     $('.flyout').hide();
-                    $('.icon-left-dir').hide();
+                    $('.arrow-right-nav').hide();
                     $('.icon-down-open').show();
                 });
             }

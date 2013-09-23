@@ -207,6 +207,11 @@ ul {
   padding: 0;
 }
 
+.top-meta {
+  height: 40px;
+  padding: 0 14px;
+}
+
 /* line 144, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .header {
   background-color: black;
@@ -247,7 +252,7 @@ nav {
   width: 100%;
 }
 /* line 177, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
-nav .icon-down-open, nav .arrow-right-nav {
+nav .icon-down-open, .arrow-right-nav {
   background-color: #303132;
   color: white;
 }
