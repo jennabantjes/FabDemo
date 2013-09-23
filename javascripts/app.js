@@ -12,6 +12,7 @@
                 $('#open-menu-2').hide();
 
                 $('#open-menu').click(function(){
+                    $('#open-menu div').toggleClass('flip-vertical');
                     $('ul.categories').slideToggle();
                 });
 
