@@ -856,7 +856,7 @@ button {
 
 /* line 705, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 input[type="search"] {
-  background: url("../../images/search.png") no-repeat 7px 4px white;
+  background: url("../../FabDemo/images/search.png") no-repeat 7px 4px white;
   border: 0px;
   border-radius: 15px;
   font-size: 13px;
