@@ -401,7 +401,13 @@ nav .icon-down-open {
 @media screen and (max-width: 550px) {
   /* line 299, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   .policies div {
+    height: auto;
+    margin-top: 14px;
     width: 100%;
+  }
+
+  .policies div:first-child {
+    margin-top: 0;
   }
 }
 
@@ -797,8 +803,7 @@ h2 {
   font-size: 13px;
   line-height: 0px;
   margin: 0;
-  padding-top: 18px;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 /* line 655, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
@@ -864,7 +869,7 @@ input[type="search"] {
   border-radius: 15px;
   font-size: 13px;
   height: 30px;
-  min-width: 95px;
+  min-width: 80px;
   padding-left: 30px;
   -webkit-appearance: none;
   width: 100%;
