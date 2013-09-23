@@ -1,5 +1,7 @@
 ;(function($){
 
+$(window).resize(function() {
+
     swapNavs = function() {
 
             var $width = $( window ).width();
@@ -49,4 +51,5 @@
 
     swapNavs();
 
+    });
 }(jQuery));
