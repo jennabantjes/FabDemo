@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* line 2, /Users/apprentice5/Sites/Fab/app/sass/neat/grid/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
@@ -22,8 +21,8 @@ nav, article, section, header, main, footer {
 
 @font-face {
   font-family: 'fontello';
-  src: url("FabDemo/fonts/fontello.eot");
-  src: url("FabDemo/fonts/fontello.eot?14191376#iefix") format("embedded-opentype"), url("FabDemo/fonts/fontello.woff") format("woff"), url("FabDemo/fonts/fontello.ttf") format("truetype"), url("FabDemo/fonts/fontello.svg#fontello") format("svg");
+  src: url("../../../fontello.eot");
+  src: url("../../../fontello.eot?14191376#iefix") format("embedded-opentype"), url("../../../fontello.woff") format("woff"), url("../../../fontello.ttf") format("truetype"), url("../../../fontello.svg#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -857,7 +856,7 @@ button {
 
 /* line 705, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 input[type="search"] {
-  background: url("FabDemo/images/search.png") no-repeat 7px 4px white;
+  background: url("../../images/search.png") no-repeat 7px 4px white;
   border: 0px;
   border-radius: 15px;
   font-size: 13px;
