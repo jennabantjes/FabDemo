@@ -15,10 +15,10 @@
                 $('ul.categories a').click(function(){
                     console.log('come on');
                     $('.icon-down-open').hide();
-                    $('.icon-left-dir').show();
+                    $('.arrow-right-nav').show();
                 });
 
-                $('.icon-left-dir').click(function(){
+                $('.arrow-right-nav').click(function(){
                     $('ul.categories').hide();
                     $('.flyout').hide();
                     $('.icon-left-dir').hide();

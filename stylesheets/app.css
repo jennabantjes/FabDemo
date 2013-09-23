@@ -820,7 +820,7 @@ h2 {
   }
 }
 
-.icon-down-open div.icon-right-dir {
+.arrow-right-nav {
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
