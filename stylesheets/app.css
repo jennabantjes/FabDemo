@@ -150,13 +150,14 @@ img {
 }
 
 .icon-down-open {
+  height: 40px;
+  line-height: 11px;
   text-align: center;
 }
 
 .icon-down-open:before {
   content: '\e80c';
   font-size: 24px;
-  line-height: 0;
 }
 
 .social-icon {
@@ -800,6 +801,7 @@ form {
 
 .login {
   font-size: 12px;
+  line-height: 24px;
 }
 
 .image-title-top {

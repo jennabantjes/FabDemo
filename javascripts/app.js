@@ -21,7 +21,7 @@
                 console.log('small');
                 $('#open-menu').show();
                 $('#open-menu-2').hide();
-                $('.menu').hide();
+                $('.icon-menu').hide();
             }
 
             else {
