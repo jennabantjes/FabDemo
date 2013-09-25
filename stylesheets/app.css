@@ -792,22 +792,22 @@ form {
 
 /* TYPE STYLES */
 
-.title-top {
+.image-title-top {
   background-color: black;
 }
 
-.title-top h1 {
+.image-title-top h1 {
   color: white;
   font-size: 14px;
   line-height: 24px;
   opacity: 1;
 }
 
-.title-top h2 {
+.image-title-top h2 {
   line-height: 18px;
 }
 
-.title-bottom {
+.image-title-bottom {
   background-color: black;
   bottom: 17px;
   color: white;
