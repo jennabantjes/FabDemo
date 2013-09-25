@@ -792,6 +792,10 @@ form {
 
 /* TYPE STYLES */
 
+.login {
+  font-size: 12px;
+}
+
 .image-title-top {
   background-color: black;
 }
