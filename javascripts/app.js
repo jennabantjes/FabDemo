@@ -32,15 +32,15 @@
                 $('#open-menu').hide();
                 $('#open-menu-2').show();
                 $('.arrow-right-nav').show();
-                $('ul.categories').hide();
-                $('.flyout').show();
+                $('ul.categories').hide('slide', {direction: 'right'}, slow);
+                $('.flyout').show('slide', {direction: 'left'}, slow);
             });
 
             $('.arrow-right-nav').click(function(){
                 $('#open-menu').show();
                 $('#open-menu-2').hide();
-                $('ul.categories').show();
-                $('.flyout').hide();
+                $('ul.categories').show('slide', {direction: 'right', slow});
+                $('.flyout').hide('slide', {direction: 'left'}, slow);
             });
         }
 
