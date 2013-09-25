@@ -23,6 +23,7 @@ body {
   background-color: #f2f2f2;
   font: 75%/1.231 "Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: auto;
+  min-width: 320px;
   padding: auto;
   max-width: 980px;
 }
@@ -659,6 +660,11 @@ footer a:hover {
 .search {
   width: 16.5%;
 }
+@media screen and (max-width: 880px) {
+  .search {
+    width: 20%;
+  }
+}
 
 .shipping-icon {
   width: 29%;
@@ -779,7 +785,7 @@ input[type="search"] {
   border-radius: 15px;
   font-size: 13px;
   height: 30px;
-  min-width: 80px;
+  min-width: 95px;
   padding-left: 30px;
   -webkit-appearance: none;
   width: 100%;
