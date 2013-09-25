@@ -1,7 +1,18 @@
 ;(function($){
 
+    preventDefault = function(){
+        $('button').click(function(e){
+            e.preventDefault();
+        });
+
+        $('a').click(function(e){
+            e.preventDefault();
+        });
+    }
+
 
     swapNavs = function() {
+        "use strict";
 
         $(window).resize(function() {
             var $width = $( window ).width();
@@ -44,6 +55,7 @@
             });
         }
 
+    preventDefault();
     swapNavs();
 
 }(jQuery));
