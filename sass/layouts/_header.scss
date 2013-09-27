@@ -1,0 +1,57 @@
+.top-text {
+  height: 40px;
+  font-size: 1em;
+  line-height: 1.66em;
+  margin: 0;
+  padding: 0 14px;
+  vertical-align: middle;
+}
+
+.sub-text {
+  color: #666666;
+  font-size: 1em;
+  padding: 0;
+}
+
+.sub-text a {
+  color: #666666;
+}
+
+.sub-text a:hover {
+  color: black;
+}
+
+.logo-bar {
+  background-color: black;
+  height: 55px;
+  padding: 0;
+}
+
+header img {
+  width: 10%;
+}
+
+.menu {
+  color: white;
+  padding: 0.8em 1.25em;
+}
+
+#open-menu {
+  color: white;
+}
+
+.logo {
+  background-color: transparent;
+  padding-top: 1.25em;
+  text-align: center;
+  vertical-align: top;
+}
+@media screen and (max-width: 47em) {
+  div.logo {
+    width: 48%;
+  }
+}
+
+.logo img {
+  width: auto;
+}

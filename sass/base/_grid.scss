@@ -1,0 +1,87 @@
+.col {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.one-of-one {
+  width: 100%;
+}
+
+.one-of-two {
+  width: 49.78%;
+}
+@media screen and (max-width: 75em) {
+  .one-of-two {
+    width: 49.65%;
+  }
+}
+@media screen and (max-width: 46.67em) {
+  .one-of-two {
+    width: 100%;
+  }
+}
+
+.one-of-three {
+  width: 33%;
+}
+@media screen and (max-width: 54.17em) {
+  .one-of-three {
+    width: 100%;
+  }
+}
+
+.two-of-three, .four-of-six {
+  width: 66%;
+}
+@media screen and (max-width: 54.17em) {
+  .two-of-three, .four-of-six {
+    width: 100%;
+  }
+}
+
+.one-of-four {
+  width: 24%;
+}
+@media screen and (max-width: 45.83em) {
+  .one-of-four {
+    width: 49%;
+  }
+}
+
+.two-of-five {
+  width: 39%;
+}
+@media screen and (max-width: 52.5em) {
+  .two-of-five {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.three-of-five {
+  width: 60%;
+}
+@media screen and (max-width: 52.5em) {
+  .three-of-five {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.one-of-six {
+  width: 16.66%;
+}
+@media screen and (max-width: 72em) {
+  .one-of-six {
+    width: 16.5%;
+  }
+}
+@media screen and (max-width: 46.67em) {
+  .one-of-six {
+    width: 100%;
+  }
+}
+
+.one-of-twelve {
+  width: 7%;
+}

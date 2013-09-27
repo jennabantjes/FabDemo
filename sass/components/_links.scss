@@ -1,0 +1,31 @@
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+a.hover-pink:hover h2 {
+  color: white;
+}
+
+a.hover-pink:hover div {
+  background-color: #e882b6;
+  color: white;
+}
+
+a.hover-orange:hover h2 {
+  color: white;
+}
+
+a.hover-orange:hover div {
+  background-color: #ff3f00;
+  color: white;
+}
+
+a.hover-blue:hover h2 {
+  color: white;
+}
+
+a.hover-blue:hover div {
+  background-color: #2ea5da;
+  color: white;
+}

@@ -1,0 +1,135 @@
+nav {
+  background-color: #303132;
+  color: white;
+  height: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.icon-down-open, .arrow-right-nav {
+  background-color: #303132;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+}
+@media screen and (max-width: 62.5em) {
+  .categories {
+    display: none;
+  }
+}
+
+.categories li {
+  border-right: 1px solid #666666;
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px 0;
+  text-align: center;
+  width: 9.5%;
+}
+@media screen and (max-width: 62.5em) {
+  .categories li {
+    background-color: white;
+    border-bottom: 1px solid #efefef;
+    border-right: 0;
+    color: #666666;
+    font-size: 1.5em;
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .categories li a {
+    color: white;
+  }
+
+  .categories li:after {
+    content: '\e80d';
+    font-family: 'fontello';
+    margin-right: 10px;
+    position: absolute;
+    right: 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+}
+
+.categories li:last-child {
+  border-right: 0px;
+}
+
+.flyout {
+  background-color: white;
+  box-shadow: 1px 5px 5px #ccc;
+  height: 404px;
+  padding: 0.5em;
+  position: absolute;
+}
+@media screen and (max-width: 62.5em) {
+  .flyout {
+    height: auto;
+  }
+}
+
+.flyout span {
+  border-right: 1px solid #666666;
+  float: left;
+}
+
+.flyout span:last-child {
+  border-right: 0;
+}
+@media screen and (max-width: 62.5em) {
+  .flyout span {
+    border-right: 0;
+    width: 100%;
+  }
+}
+
+.flyout h2, .flyout li {
+  background-color: white;
+  border-bottom: 1px solid #efefef;
+  border-right: 0;
+  color: #666666;
+  float: left;
+  padding: 10px;
+  width: 100%;
+}
+
+.flyout li:hover {
+  background-color: #efefef;
+}
+
+.nav-image li {
+  width: 49%;
+}
+
+.nav-image li img {
+  width: 100%;
+}
+
+.icon-down-open {
+  display: none;
+}
+@media screen and (max-width: 62.5em) {
+  .icon-down-open {
+    display: block;
+  }
+}
+
+.sub-nav li {
+  display: inline-block;
+  padding-top: 8px;
+}
+
+.small-nav {
+  display: none;
+  text-align: center;
+}
+@media screen and (max-width: 58.4em) {
+  .small-nav {
+    display: block;
+  }
+}

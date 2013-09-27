@@ -1,0 +1,93 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+html {
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+  position: relative;
+  min-height: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: white;
+  font: 75%/1.231 "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: auto;
+  min-width: 320px;
+  max-width: 980px;
+  padding: auto;
+}
+
+body:before {
+  content: "largescreen";
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+@media screen and (max-width: 62.5em) {
+  body:before {
+  content: "smallscreen";
+  }
+}
+
+section {
+  margin: 2px;
+}
+
+section, div {
+  padding: 0.86em;
+  z-index: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+nav, article, section, header, main, footer {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  color: white;
+  font-size: 1.16em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}

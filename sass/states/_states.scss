@@ -1,0 +1,21 @@
+.sub-nav a:hover {
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: black;
+}
+
+.red-hover {
+  color: white;
+  font-size: 1.5em;
+  padding: 1.33em 0;
+  margin: 0;
+  text-align: center;
+  vertical-align: top;
+}
+
+.red-hover:hover {
+  background-color: red;
+  color: white;
+}

@@ -1,0 +1,157 @@
+.login {
+  color: #666666;
+  font-size: 1.16em;
+  line-height: 2em;
+}
+@media screen and (max-width: 76.25em) {
+  .login {
+    line-height: 1em;
+    width: 10%;
+  }
+}
+
+.policies {
+  clear: both;
+}
+
+.policies div {
+  background-color: #efefef;
+  height: 10em;
+  width: 33%;
+}
+@media screen and (max-width: 700px) {
+  .policies div {
+    height: 12.5em;
+    width: 32.9%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .policies div {
+    height: auto;
+    margin-top: 1.16em;
+    width: 100%;
+  }
+
+  .policies div:first-child {
+    margin-top: 0;
+  }
+}
+
+.fab-us {
+  padding: 8px 0 0 0;
+  width: 10%;
+}
+
+.featured {
+  padding: 0px;
+}
+
+.featured div.one-of-three {
+  padding: 0px;
+}
+
+.shipping-icons {
+  padding: 0px;
+}
+
+.shipping-icon {
+  padding: 0;
+  margin: 0 0.5em
+}
+
+.browse {
+  padding: 2px;
+}
+
+.home {
+  width: 60%;
+}
+
+.home, .fun {
+  margin-left: 2px;
+  width: 60%;
+}
+
+@media screen and (max-width: 46.67em) {
+  .home, .fun {
+    width: 100%;
+  }
+}
+
+.art, .furniture, .jewelry, .food {
+  margin: 1px;
+  width: 39%;
+}
+
+@media screen and (max-width: 46.67em) {
+  .art, .furniture, .jewelry, .food {
+    width: 100%;
+  }
+}
+
+.most-popular {
+  padding-bottom: 54px;
+  width: 65.75%;
+}
+@media screen and (max-width: 46.67em) {
+  .most-popular {
+    width: 100%;
+  }
+}
+
+.search {
+  width: 16.5%;
+}
+@media screen and (max-width: 73.34em) {
+  .search {
+    width: 20%;
+  }
+}
+
+.shipping-icon {
+  width: 29%;
+}
+
+
+
+
+.social {
+  text-align: center;
+}
+
+.social p {
+  font-size: 1.25em;
+  line-height: 2.5em;
+  padding: 1.16em;
+}
+
+.shipping-text {
+  font-size: 2.5em;
+}
+
+.shipping-text div {
+  padding: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 68.75em) {
+  .shipping-text {
+    font-size: 2em;
+  }
+}
+
+.arrow-right-nav {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+.policies h2 {
+  color: #666666;
+  font-size: 22px;
+  line-height: 2em;
+  margin: 0;
+}

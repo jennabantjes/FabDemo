@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+
+        <title>Fab Responsive Home</title>
+
+        <link href="sass/application.css" rel="stylesheet" type="text/css">
+
+    </head>
+    <body>
+
+        {% include _header.html %}
+
+        <div class="dotted-border no-padding">
+
+            {{ content }}
+
+            {% include _footer.html %}
+
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+         <script src="javascripts/app.js"></script>
+
+    </body>
+</html>
+

@@ -1,0 +1,41 @@
+.no-padding {
+  padding: 0px;
+}
+
+.flip-vertical {
+          -moz-transform: scaleY(-1);
+        -o-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+        filter: FlipV;
+        -ms-filter: "FlipV";
+}
+
+.hidden {
+  display: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.float-right {
+  float: right;
+  text-align: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.clear {
+  clear: both;
+}
+
+.dotted-border {
+  border: 1px dotted #303132;
+}
