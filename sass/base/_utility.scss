@@ -11,8 +11,20 @@
         -ms-filter: "FlipV";
 }
 
-.hidden {
+// Content will be read by screen reader
+.is-hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.is-removed-from-widescreen {
   display: none;
+}
+@media screen and (max-width: 62.5em) {
+  .is-removed-from-widescreen {
+    display: block;
+  }
 }
 
 .uppercase {

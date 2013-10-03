@@ -1,6 +1,7 @@
-a {
+a, a:hover, a:visited {
   color: #666666;
   text-decoration: none;
+  -webkit-appearance: none;
 }
 
 a.hover-pink:hover h2 {

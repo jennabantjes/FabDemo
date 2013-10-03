@@ -4,12 +4,21 @@ nav {
   height: 40px;
   position: relative;
   width: 100%;
+
+  a {
+    color: #f2f2f2;
+
+    &:hover {
+      color: white;
+    }
+  }
 }
 
-.icon-down-open, .arrow-right-nav {
+.icon-down-arrow, .icon-right-arrow {
   background-color: #303132;
   color: white;
-  font-size: 2em;
+  height: 40px;
+  line-height: 0;
   text-align: center;
 }
 @media screen and (max-width: 62.5em) {
@@ -60,35 +69,44 @@ nav {
   border-right: 0px;
 }
 
-.flyout {
+#flyout {
   background-color: white;
   box-shadow: 1px 5px 5px #ccc;
   height: 404px;
   padding: 0.5em;
   position: absolute;
+  left: -9999px;
+  top: -9999px;
+
+  &.is-open {
+    left: 0;
+    top: 0;
+  }
+
+    span {
+    border-right: 1px solid #666666;
+    float: left;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
 }
+
 @media screen and (max-width: 62.5em) {
-  .flyout {
+  #flyout {
     height: auto;
   }
 }
 
-.flyout span {
-  border-right: 1px solid #666666;
-  float: left;
-}
-
-.flyout span:last-child {
-  border-right: 0;
-}
 @media screen and (max-width: 62.5em) {
-  .flyout span {
+  #flyout span {
     border-right: 0;
     width: 100%;
   }
 }
 
-.flyout h2, .flyout li {
+#flyout h2, .flyout li {
   background-color: white;
   border-bottom: 1px solid #efefef;
   border-right: 0;

@@ -1,90 +1,114 @@
-;(function($){
-    'use strict';
+/*
+    polyfill for getComputedStyle
+*/
 
-    $(window).on('resize', function(){
-
-        var size = window.getComputedStyle(document.body,':before').getPropertyValue('content');
-
-        console.log(size);
-
-        /*if(size && size.indexOf("smallscreen") !=-1) {
-
-            if($('.accordion').length > 0) {
-
-                $('.accordion').each(Roberts.createAccordion);
-            } else {
-                $('.accordion').each(Roberts.destroyAccordion);
+if (!window.getComputedStyle) {
+    window.getComputedStyle = function(el, pseudo) {
+        this.el = el;
+        this.getPropertyValue = function(prop) {
+            var re = /(\-([a-z]){1})/g;
+            if (prop == 'float') prop = 'styleFloat';
+            if (re.test(prop)) {
+                prop = prop.replace(re, function () {
+                    return arguments[2].toUpperCase();
+                });
             }
-        } // if accordionCount
+        return el.currentStyle[prop] ? el.currentStyle[prop] : null;
+        }
+        return this;
+    }
+}
 
-        }*/
-    });
+/* start JS */
+
+(function(){
+
+  // get the initial breakpoint
+  var size = window.getComputedStyle(document.body,':before').getPropertyValue('content');
+
+  $('#nav-flyout-toggle').on('click touchstart', function(e) {
+
+    e.preventDefault();
+
+    var self = $(this);
+    var menu = $('#flyout');
+    var icon = self.find('.icon');
+
+    if(menu.hasClass('is-open')) {
+
+      menu.slideUp(125, function(){
+        menu.removeClass('is-open');
+        icon.removeClass('icon-right-arrow').addClass('icon-down-arrow');
+        menu.removeAttr('style');
+      });
 
 
-}(jQuery));
+    } else {
+      menu.addClass('is-open');
 
-/*;(function($){
+      menu.hide().slideDown(125);
 
-    var preventDefault = function(){
-        $('a').click(function(e){
-            e.preventDefault();
-        });
+      icon.removeClass('icon-down-arrow').addClass('icon-right-arrow');
     }
 
+  });
 
-    var swapNavs = function() {
-        "use strict";
 
-        $(window).resize(function() {
-            var $width = $( window ).width();
+  $('#nav-toggle').on('click touchstart', function(e) {
 
-            if ($width <= 750) {
-                console.log('small');
-                $('#open-menu').show();
-                $('#open-menu-2').hide();
-                $('.icon-menu').hide();
-            }
+    e.preventDefault();
 
-            else {
-                $('#open-menu').hide();
-                $('#open-menu-2').hide();
-            }
-        });
+    if($('body').hasClass('is-open')) {
 
-            $('ul.categories a').click(function(){
-                $('.flyout').slideToggle();
-            });
+      // close the menu
 
-            $('#open-menu').click(function(){
-                $('#open-menu div').toggleClass('flip-vertical');
-                $('ul.categories').slideToggle();
-            });
+      $('.banner, .content').animate({
+        'left':'0%'
+      }, 200, function(){
+        $('body').removeClass('is-open').removeAttr('style');
+        $('.wrapper').removeAttr('style');
+      });
 
-            $('ul.categories a').click(function(){
-                console.log('come on');
-                $('#open-menu').hide();
-                $('#open-menu-2').show();
-                $('.arrow-right-nav').show();
-                $('ul.categories').hide();
-                $('.flyout').show();
-            });
+    } else {
 
-            $('.arrow-right-nav').click(function(){
-                $('#open-menu').show();
-                $('#open-menu-2').hide();
-                $('ul.categories').show();
-                $('.flyout').hide();
-            });
-        }
+      // open the menu
 
-    preventDefault();
-    swapNavs();
+      $('body').addClass('is-open');
+      $('.wrap').height($(window).height());
 
-}(jQuery));*/
+      $('.banner, .content').animate({
+        'left': '80%'
+      }, 200);
+
+    }
+
+  });
+
+  /*
+    responsive JS
+  */
+
+  if( size.indexOf("narrow") !=-1 ) {
+    console.log('welcome, mr. narrow screen');
+
+  }
+
+  // monitor the breakpoint
+  window.addEventListener("resize", function () {
+
+    size = window.getComputedStyle(document.body,':before').getPropertyValue('content');
+
+    if( size.indexOf("narrow") !=-1 ) {
 
 
 
+    } else {
 
 
+      $('body').removeClass('is-open').removeAttr('style');
+      $('.banner, .content').removeAttr('style');
+    }
 
+  }, false);
 
+})();

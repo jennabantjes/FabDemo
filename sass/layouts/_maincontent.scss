@@ -1,13 +1,5 @@
-.login {
-  color: #666666;
-  font-size: 1.16em;
-  line-height: 2em;
-}
-@media screen and (max-width: 76.25em) {
-  .login {
-    line-height: 1em;
-    width: 10%;
-  }
+.menu.red-hover {
+  padding: 0.5em;
 }
 
 .policies {
@@ -67,12 +59,16 @@
   width: 60%;
 }
 
+.women, .men {
+  margin: 2px 0 2px 2px;
+}
+
 .home, .fun {
   margin-left: 2px;
   width: 60%;
 }
 
-@media screen and (max-width: 46.67em) {
+@media screen and (max-width: 50em) {
   .home, .fun {
     width: 100%;
   }
@@ -80,10 +76,10 @@
 
 .art, .furniture, .jewelry, .food {
   margin: 1px;
-  width: 39%;
+  width: 39.5%;
 }
 
-@media screen and (max-width: 46.67em) {
+@media screen and (max-width: 50em) {
   .art, .furniture, .jewelry, .food {
     width: 100%;
   }

@@ -6,7 +6,7 @@
   font-style: normal;
 }
 
-.icon-email, .icon-menu, .icon-cancel, .icon-truck, .icon-bus, .icon-menu-1, .icon-hash, .icon-facebook-circled, .icon-twitter-circled, .icon-smile, .icon-lock, .icon-truck-1, .icon-down-open, .icon-right-dir, .icon-left-dir {
+.icon-email, .icon-menu, .icon-cancel, .icon-truck, .icon-bus, .icon-menu-1, .icon-hash, .icon-facebook-circled, .icon-twitter-circled, .icon-smile, .icon-lock, .icon-truck-1, .icon-down-arrow, .icon-right-arrow, .icon-left-arrow {
   font-family: 'fontello';
   speak: none;
   font-style: normal;
@@ -66,27 +66,15 @@
   content: '\e80a';
 }
 
-.icon-right-dir:before {
+.icon-right-arrow:before {
   content: '\e80d';
 }
 
-.icon-left-dir {
-  text-align: center;
-}
-
-.icon-left-dir:before {
+.icon-left-arrow:before {
   content: '\e80e';
-  font-size: 2em;
-  line-height: 0;
 }
 
-.icon-down-open {
-  height: 40px;
-  line-height: 1em;
-  text-align: center;
-}
-
-.icon-down-open:before {
+.icon-down-arrow:before {
   content: '\e80c';
   font-size: 2em;
 }

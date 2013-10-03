@@ -53,14 +53,14 @@ body {
   padding: auto; }
 
 body:before {
-  content: "largescreen";
+  content: "widescreen";
   position: absolute;
   top: -9999px;
   left: -9999px; }
 
 @media screen and (max-width: 62.5em) {
   body:before {
-    content: "smallscreen"; } }
+    content: "narrowscreen"; } }
 section {
   margin: 2px; }
 
@@ -89,6 +89,9 @@ h2 {
 img {
   width: 100%; }
 
+p {
+  color: #666666; }
+
 @font-face {
   font-family: 'fontello';
   src: url("../fonts/fontello.eot");
@@ -96,7 +99,7 @@ img {
   font-weight: normal;
   font-style: normal; }
 
-.icon-email, .icon-menu, .icon-cancel, .icon-truck, .icon-bus, .icon-menu-1, .icon-hash, .icon-facebook-circled, .icon-twitter-circled, .icon-smile, .icon-lock, .icon-truck-1, .icon-down-open, .icon-right-dir, .icon-left-dir {
+.icon-email, .icon-menu, .icon-cancel, .icon-truck, .icon-bus, .icon-menu-1, .icon-hash, .icon-facebook-circled, .icon-twitter-circled, .icon-smile, .icon-lock, .icon-truck-1, .icon-down-arrow, .icon-right-arrow, .icon-left-arrow {
   font-family: 'fontello';
   speak: none;
   font-style: normal;
@@ -143,23 +146,13 @@ img {
 .icon-truck-1:before {
   content: '\e80a'; }
 
-.icon-right-dir:before {
+.icon-right-arrow:before {
   content: '\e80d'; }
 
-.icon-left-dir {
-  text-align: center; }
+.icon-left-arrow:before {
+  content: '\e80e'; }
 
-.icon-left-dir:before {
-  content: '\e80e';
-  font-size: 2em;
-  line-height: 0; }
-
-.icon-down-open {
-  height: 40px;
-  line-height: 1em;
-  text-align: center; }
-
-.icon-down-open:before {
+.icon-down-arrow:before {
   content: '\e80c';
   font-size: 2em; }
 
@@ -183,7 +176,7 @@ img {
 @media screen and (max-width: 75em) {
   .one-of-two {
     width: 49.65%; } }
-@media screen and (max-width: 46.67em) {
+@media screen and (max-width: 45em) {
   .one-of-two {
     width: 100%; } }
 .one-of-three {
@@ -224,7 +217,7 @@ img {
 @media screen and (max-width: 72em) {
   .one-of-six {
     width: 16.5%; } }
-@media screen and (max-width: 46.67em) {
+@media screen and (max-width: 50em) {
   .one-of-six {
     width: 100%; } }
 .one-of-twelve {
@@ -241,9 +234,17 @@ img {
   filter: FlipV;
   -ms-filter: "FlipV"; }
 
-.hidden {
+.is-hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+
+.is-removed-from-widescreen {
   display: none; }
 
+@media screen and (max-width: 62.5em) {
+  .is-removed-from-widescreen {
+    display: block; } }
 .uppercase {
   text-transform: uppercase; }
 
@@ -334,15 +335,9 @@ header img {
 .logo img {
   width: auto; }
 
-.login {
-  color: #666666;
-  font-size: 1.16em;
-  line-height: 2em; }
+.menu.red-hover {
+  padding: 0.5em; }
 
-@media screen and (max-width: 76.25em) {
-  .login {
-    line-height: 1em;
-    width: 10%; } }
 .policies {
   clear: both; }
 
@@ -386,18 +381,21 @@ header img {
 .home {
   width: 60%; }
 
+.women, .men {
+  margin: 2px 0 2px 2px; }
+
 .home, .fun {
   margin-left: 2px;
   width: 60%; }
 
-@media screen and (max-width: 46.67em) {
+@media screen and (max-width: 50em) {
   .home, .fun {
     width: 100%; } }
 .art, .furniture, .jewelry, .food {
   margin: 1px;
-  width: 39%; }
+  width: 39.5%; }
 
-@media screen and (max-width: 46.67em) {
+@media screen and (max-width: 50em) {
   .art, .furniture, .jewelry, .food {
     width: 100%; } }
 .most-popular {
@@ -466,11 +464,16 @@ nav {
   height: 40px;
   position: relative;
   width: 100%; }
+  nav a {
+    color: #f2f2f2; }
+    nav a:hover {
+      color: white; }
 
-.icon-down-open, .arrow-right-nav {
+.icon-down-arrow, .icon-right-arrow {
   background-color: #303132;
   color: white;
-  font-size: 2em;
+  height: 40px;
+  line-height: 0;
   text-align: center; }
 
 @media screen and (max-width: 62.5em) {
@@ -512,28 +515,31 @@ nav {
 .categories li:last-child {
   border-right: 0px; }
 
-.flyout {
+#flyout {
   background-color: white;
   box-shadow: 1px 5px 5px #ccc;
   height: 404px;
   padding: 0.5em;
-  position: absolute; }
+  position: absolute;
+  left: -9999px;
+  top: -9999px; }
+  #flyout.is-open {
+    left: 0;
+    top: 0; }
+  #flyout span {
+    border-right: 1px solid #666666;
+    float: left; }
+    #flyout span:last-child {
+      border-right: 0; }
 
 @media screen and (max-width: 62.5em) {
-  .flyout {
+  #flyout {
     height: auto; } }
-.flyout span {
-  border-right: 1px solid #666666;
-  float: left; }
-
-.flyout span:last-child {
-  border-right: 0; }
-
 @media screen and (max-width: 62.5em) {
-  .flyout span {
+  #flyout span {
     border-right: 0;
     width: 100%; } }
-.flyout h2, .flyout li {
+#flyout h2, .flyout li {
   background-color: white;
   border-bottom: 1px solid #efefef;
   border-right: 0;
@@ -568,6 +574,11 @@ nav {
 @media screen and (max-width: 58.4em) {
   .small-nav {
     display: block; } }
+.image-title {
+  background: black;
+  color: white;
+  opacity: 0.7; }
+
 .sub-nav a:hover {
   text-decoration: underline; }
 
@@ -577,7 +588,7 @@ footer a:hover {
 .red-hover {
   color: white;
   font-size: 1.5em;
-  padding: 1.33em 0;
+  padding: 1em 0;
   margin: 0;
   text-align: center;
   vertical-align: top; }

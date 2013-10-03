@@ -45,14 +45,14 @@ body {
 }
 
 body:before {
-  content: "largescreen";
+  content: "widescreen";
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 @media screen and (max-width: 62.5em) {
   body:before {
-  content: "smallscreen";
+  content: "narrowscreen";
   }
 }
 
@@ -90,4 +90,8 @@ h2 {
 
 img {
   width: 100%;
+}
+
+p {
+    color: $medium-grey;
 }
