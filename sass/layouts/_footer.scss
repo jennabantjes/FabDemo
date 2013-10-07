@@ -1,14 +1,19 @@
-footer li {
-  margin-bottom: 0.67em;
+.secondary-nav {
+    padding: 2.8% 1.446280991736%; /* 14/ 968 */
+    width: 69.694215%; /* 694/968*/
 }
 
-footer div {
-  padding: 0.84em;
+.sub-nav li {
+    display: inline-block;
 }
 
 footer h2 {
   color: #666666;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: bold;
-  line-height: 2.5em;
+  line-height: 2.5rem;
+}
+
+.footer li {
+    padding: 0.5em 0;
 }

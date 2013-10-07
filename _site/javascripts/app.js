@@ -31,7 +31,7 @@ if (!window.getComputedStyle) {
     e.preventDefault();
 
     var self = $(this);
-    var menu = $('#flyout');
+    var menu = $('#categories');
     var icon = self.find('.icon');
 
     if(menu.hasClass('is-open')) {
@@ -54,7 +54,7 @@ if (!window.getComputedStyle) {
   });
 
 
-  $('#nav-toggle').on('click touchstart', function(e) {
+  $('#flyout a').on('click touchstart', function(e) {
 
     e.preventDefault();
 
@@ -62,7 +62,7 @@ if (!window.getComputedStyle) {
 
       // close the menu
 
-      $('.banner, .content').animate({
+      $('#flyout').animate({
         'left':'0%'
       }, 200, function(){
         $('body').removeClass('is-open').removeAttr('style');
@@ -99,14 +99,13 @@ if (!window.getComputedStyle) {
     size = window.getComputedStyle(document.body,':before').getPropertyValue('content');
 
     if( size.indexOf("narrow") !=-1 ) {
+      console.log('narrow');
+    }
 
-
-
-    } else {
-
-
-      $('body').removeClass('is-open').removeAttr('style');
-      $('.banner, .content').removeAttr('style');
+    else {
+      console.log('hmm');
+      //$('body').removeClass('is-open').removeAttr('style');
+      //$('.banner, .content').removeAttr('style');
     }
 
   }, false);

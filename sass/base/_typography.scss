@@ -1,4 +1,32 @@
+#first-banner-title {
+    font-size: 1.8rem;
+}
+
 .login {
-  font-size: 1em;
-  line-height: 2em;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.top-text {
+  height: 40px;
+  font-size: 1rem;
+  line-height: 1.66rem;
+  margin: 0;
+  padding: 0 14px;
+  vertical-align: middle;
+}
+
+.sub-text {
+  color: $medium-grey;
+  font-size: 0.7rem;
+  font-weight: 400;
+  padding: 0;
+
+  li a {
+    text-decoration: none;
+
+    &:hover {
+      color: black;
+    }
+  }
 }

@@ -23,7 +23,7 @@
 
 .icon-menu:before {
   content: '\e800';
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .icon-cancel:before {
@@ -76,11 +76,12 @@
 
 .icon-down-arrow:before {
   content: '\e80c';
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .social-icon {
-  font-size: 2.5em;
+  color: $medium-grey;
+  font-size: 2.4rem;
 }
 
 .social-icon:hover {

@@ -1,3 +1,13 @@
+#body-wrapper {
+  margin: 0 auto;
+  width: 99.59183672494%; /* 976 / 980 */
+}
+
+.full-banner {
+  padding: 1.652892561983%; /* 16 / 968 */
+  width: 99.180327868852%; /*968 / 976 */
+}
+
 .menu.red-hover {
   padding: 0.5em;
 }
@@ -8,10 +18,19 @@
 
 .policies div {
   background-color: #efefef;
-  height: 10em;
-  width: 33%;
+  height: 12em;
+  margin: 1.446280991736% 0.723140495868%; /* 14/ 968 */
+  padding: 1.446280991736%; /*14 / 305 */
+  width: 31.50826446281%; /*305 / 968 */
+
+  h2 {
+    color: #666666;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin: 0;
+  }
 }
-@media screen and (max-width: 700px) {
+/*@media screen and (max-width: 700px) {
   .policies div {
     height: 12.5em;
     width: 32.9%;
@@ -27,20 +46,7 @@
   .policies div:first-child {
     margin-top: 0;
   }
-}
-
-.fab-us {
-  padding: 8px 0 0 0;
-  width: 10%;
-}
-
-.featured {
-  padding: 0px;
-}
-
-.featured div.one-of-three {
-  padding: 0px;
-}
+}*/
 
 .shipping-icons {
   padding: 0px;
@@ -64,65 +70,53 @@
 }
 
 .home, .fun {
-  margin-left: 2px;
-  width: 60%;
+  padding: 2.504472271914%; /* 14 / 559 */
+  width: 57.644628099174%; /* 559 / 968 */
 }
 
-@media screen and (max-width: 50em) {
+/*@media screen and (max-width: 50em) {
   .home, .fun {
     width: 100%;
   }
-}
+}*/
 
 .art, .furniture, .jewelry, .food {
-  margin: 1px;
-  width: 39.5%;
+  padding: 3.448275862069%; /* 14 / 406 */
+  width: 41.942148760331%; /* 406 / 968 */
 }
 
-@media screen and (max-width: 50em) {
+/*@media screen and (max-width: 50em) {
   .art, .furniture, .jewelry, .food {
     width: 100%;
   }
-}
-
-.most-popular {
-  padding-bottom: 54px;
-  width: 65.75%;
-}
-@media screen and (max-width: 46.67em) {
-  .most-popular {
-    width: 100%;
-  }
-}
+}*/
 
 .search {
   width: 16.5%;
 }
-@media screen and (max-width: 73.34em) {
+/*@media screen and (max-width: 73.34em) {
   .search {
     width: 20%;
   }
-}
+}*/
 
 .shipping-icon {
   width: 29%;
 }
-
-
-
 
 .social {
   text-align: center;
 }
 
 .social p {
-  font-size: 1.25em;
-  line-height: 2.5em;
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 2.4rem;
   padding: 1.16em;
 }
 
 .shipping-text {
-  font-size: 2.5em;
+  font-size: 2.4rem;
 }
 
 .shipping-text div {
@@ -132,7 +126,7 @@
 
 @media screen and (max-width: 68.75em) {
   .shipping-text {
-    font-size: 2em;
+    font-size: 2rem;
   }
 }
 
@@ -145,9 +139,3 @@
         -ms-filter: "FlipH";
 }
 
-.policies h2 {
-  color: #666666;
-  font-size: 22px;
-  line-height: 2em;
-  margin: 0;
-}

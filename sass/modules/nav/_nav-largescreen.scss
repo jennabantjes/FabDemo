@@ -21,51 +21,46 @@ nav {
   line-height: 0;
   text-align: center;
 }
-@media screen and (max-width: 62.5em) {
-  .categories {
-    display: none;
-  }
-}
 
-.categories li {
+#categories li {
   border-right: 1px solid #666666;
   display: inline-block;
-  font-size: 14px;
+  font-size: 1rem;
   padding: 10px 0;
   text-align: center;
   width: 9.5%;
 }
 @media screen and (max-width: 62.5em) {
-  .categories li {
+  #categories a {
     background-color: white;
     border-bottom: 1px solid #efefef;
     border-right: 0;
     color: #666666;
-    font-size: 1.5em;
+    font-size: 1.4rem;
     text-align: left;
     padding: 10px;
     width: 100%;
   }
 
-  .categories li a {
+  #categories a {
     color: white;
   }
 
-  .categories li:after {
+  #categories a:after {
     content: '\e80d';
     font-family: 'fontello';
     margin-right: 10px;
     position: absolute;
     right: 0;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
+    //-webkit-transition: all 1s ease;
+    //-moz-transition: all 1s ease;
+    //-ms-transition: all 1s ease;
+    //-o-transition: all 1s ease;
+    //transition: all 1s ease;
   }
 }
 
-.categories li:last-child {
+#categories a:last-child {
   border-right: 0px;
 }
 
@@ -78,9 +73,14 @@ nav {
   left: -9999px;
   top: -9999px;
 
+  a, a:hover, a:visited {
+    color: black;
+  }
+
   &.is-open {
     left: 0;
-    top: 0;
+    top: 40px;
+    width: 100%;
   }
 
     span {
@@ -106,7 +106,7 @@ nav {
   }
 }
 
-#flyout h2, .flyout li {
+#flyout h2, #flyout li {
   background-color: white;
   border-bottom: 1px solid #efefef;
   border-right: 0;
@@ -116,7 +116,7 @@ nav {
   width: 100%;
 }
 
-.flyout li:hover {
+#flyout li:hover {
   background-color: #efefef;
 }
 
@@ -135,11 +135,6 @@ nav {
   .icon-down-open {
     display: block;
   }
-}
-
-.sub-nav li {
-  display: inline-block;
-  padding-top: 8px;
 }
 
 .small-nav {
